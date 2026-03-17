@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% from "components/card.html" import Card %}
+{% block content %}
+<main>
+    <section>
+        <!-- hero section -->
+    </section>
+    <section>
+        <!-- action banner -->>
+    </section>
+    <section class="latest-news">
+        <!-- latest news -->
+         <div class="container">
+            <h2>Latest News & Updates</h2>
+            <div class="cards">
+                {% for article in articles %}
+                    {{ Card(article)}}
+                {% endfor %}
+            </div>
+         </div>
+    </section>
+    <section>
+        <!-- big wins -->
+    </section>
+    <section>
+        <!-- network & reach -->
+    </section>
+    <section>
+        <!-- Featured properties -->
+    </section>
+    <section>
+        <!-- find us -->
+    </section>
+</main>
+{% endblock %}
