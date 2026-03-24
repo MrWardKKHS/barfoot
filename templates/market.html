@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="market-update-page">
+    <div class="market-update-container">
+        <p class="eyebrow">Market reports</p>
+        <h1>February Housing Market Update</h1>
+        <p class="intro">
+            Buyer confidence continued to build in February, with stronger attendance at open homes
+            and a noticeable lift in sales activity across Auckland. Lower price points remained especially active,
+            while well-presented homes in desirable locations attracted solid competition.
+        </p>
+
+        <img
+            class="hero-image"
+            src="{{ url_for('static', filename='images/image1.jpg') }}"
+            alt="Auckland housing market update"
+        >
+
+        <div class="update-meta">
+            <span>Published: 1 February 2026</span>
+            <span>Category: Housing Market Update</span>
+        </div>
+
+        <div class="update-content">
+            <h2>Overview</h2>
+            <p>
+                February saw a steady increase in buyer enquiry, particularly in the under-$1,000,000 bracket.
+                Vendors who priced realistically and presented their homes well were rewarded with stronger turnout
+                and more confident offers.
+            </p>
+
+            <p>
+                First-home buyers remained an important part of the market, helped by softer prices in some suburbs.
+                Investors were also more active than in previous months, particularly where rental demand remained strong.
+            </p>
+
+            <h2>What we noticed this month</h2>
+            <ul>
+                <li>Open home attendance improved across many suburbs.</li>
+                <li>Affordable homes continued to attract the strongest interest.</li>
+                <li>Well-marketed listings stood out in a competitive environment.</li>
+                <li>Buyers remained careful, but were more willing to act than late last year.</li>
+            </ul>
+
+            <h2>Looking ahead</h2>
+            <p>
+                If current confidence continues, we would expect the market to remain active through early autumn.
+                Sellers should focus on pricing, presentation, and strong photography, while buyers should be prepared
+                to move quickly on quality listings.
+            </p>
+
+            <blockquote>
+                “The market is still price-sensitive, but the number of active buyers is clearly improving.”
+            </blockquote>
+
+            <a href="#" class="report-button">Download full February report</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
