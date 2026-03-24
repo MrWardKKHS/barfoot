@@ -1,10 +1,3 @@
-{% macro Card(article) %}
-<div class="card">
-    <a href="{{article['link_href']}}">
-        <img src="{{ url_for('static', filename=article['img_src']) }}" alt="{{article['img_alt']}}">
-        <h5>{{article['title']}}</h5>
-        <p>{{article['summary']}}</p>
-        <label for="">{{article['link_text']}}</label>
-    </a>
-</div>
-{% endmacro %}
+<!-- Create a macro -->
+<!-- Layout each of our cards -->
+<!-- reference the article dictionary to get content -->

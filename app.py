@@ -42,8 +42,12 @@ def get_articles():
 
 @app.route('/')
 def index():
-    articles = get_articles()
-    return render_template('index.html', articles=articles)
+    # Wire up this route to index.html 
+    # make sure to send the articles to the template
+    pass
+
+# Make a new route to that renders market.html
+# The URL should be /market-update
 
 @app.route('/market-update')
 def market():
