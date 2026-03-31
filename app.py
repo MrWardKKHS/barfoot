@@ -49,9 +49,5 @@ def index():
 # Make a new route to that renders market.html
 # The URL should be /market-update
 
-@app.route('/market-update')
-def market():
-    return render_template('market.html')
-
 if __name__ == "__main__":
     app.run(debug=True)
